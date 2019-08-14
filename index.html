@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <link rel ="stylesheet" type ="text/css" href="index.css">
+        <script type="text/javascript" src ="index.js"></script>
+    </head>
+    
+    <body>
+        <h3> FX Calculator</h3>
+        
+        <div>
+        <form autocomplete="off>
+            <label for="fromCurrency">From:</label>
+            <select id ="fromCurrency">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="USD">USD</option>
+            </select>
+            <label for="amount">Amount</label>
+            <input autocomplete="false" name="hidden" type="number" id="amount" placeholder="Amount">
+    
+            <label for="toCurrency">To:</label>
+            <select id ="toCurrency">
+                <option value="AUD" selected="selected">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="USD">USD</option>
+            </select>
+            </form>
+                        <input type="submit" value ="Convert" onclick="convertCurrency()"></input>
+            
+            <h3 id="result"></h3>
+
+        </div>
+
+    </body>
+</html>
